@@ -25,7 +25,7 @@ export default function WorkHistory () {
                 <p>Jul 2024- Present</p>
                 <h3 className="font-bold">Software Engineering Resident</h3>
                 <h4>Headstarter AI</h4>
-                <p>
+                <p className="text-sm">
                     • Crafted and deployed 5+ AI apps using RAG, OpenAI, Pinecone, and Stripe, achieving 98% accuracy with 450+ total users
                     <br />
                     • Developed a support agent with RAG, OpenAI, and Pinecone, handling 1,000+ queries weekly, boosting accuracy by 40%
@@ -52,7 +52,7 @@ export default function WorkHistory () {
             <p>Jul 2024 - Sep 2024</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Pixeland Technologies Inc</h4>
-                <p>
+                <p className="text-sm">
                     • Created a scalable virtual oﬃce platform with React, Redux, and Firebase, boosting engagement by 30% across 10 teams
                     <br />
                     • Engineered real-time sync with Firebase, improving interactions for 2,000+ users with 20% reduced latency
@@ -79,7 +79,7 @@ export default function WorkHistory () {
             <p>Feb 2024 - Apr 2024</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Lob</h4>
-                <p>
+                <p className="text-sm">
                     • Implemented authentication system with React and Auth0, reducing unauthorized access by 20% for 10,000+ users
                     <br />
                     • Optimized PostgreSQL and ExpressJS queries, reducing response time by 50% for 5,000+ active users
@@ -106,7 +106,7 @@ export default function WorkHistory () {
             <p>Jul 2023 - Dec 2023</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Sweep</h4>
-                <p>
+                <p className="text-sm">
                     • Built automated document processing application with Docker and Flask, boosting eﬃciency by 40% for 1,000+ PDFs daily
                     <br />
                     • Integrated gpt-3.5 turbo powered virtual assistant for data insights, reducing errors by 20% in 3,000+ reviews weekly
@@ -129,7 +129,7 @@ export default function WorkHistory () {
             <p>Jun 2023 - Aug 2023</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Open Avenues (Remix Labs)</h4>
-                <p>
+                <p className="text-sm">
                     • Connected 5+ external APIs using the RemixBuilder no-code platform, unlocking access to over 10k data points weekly
                     <br />
                     • Automated data analysis tasks via RemixBuilder’s no-code interface, reducing manual report preparation time by 15%
