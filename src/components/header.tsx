@@ -1,12 +1,19 @@
 "use client";
 
 import { Button } from "@/atoms/button";
-import { Sun } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 
 
 export default function Header() {
     const router = useRouter();
+    const { theme, setTheme } = useTheme();
+
+    const toggleTheme = () => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    }
 
     return (<header className="w-full max-w-3xl mx-auto sm:px-6 py-6 lg:px-8">
         <nav className="flex flex-row justify-between w-full">
@@ -40,12 +47,17 @@ export default function Header() {
                 </li>
             </ul>
             <ul className="flex flex-row gap-4">
-                <li className="hidden">
+                <li>
                     <Button
                         variant="ghost"
                         className="p-0 text-md"
+                        onClick={toggleTheme}
                     >
-                        <Sun />
+                        {theme === 'dark' ? (
+                            <Sun />
+                        ): (
+                            <Moon />
+                        )}
                     </Button>
                 </li>
             </ul>
