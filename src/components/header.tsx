@@ -32,13 +32,6 @@ export default function Header() {
                         Blog
                     </Button>
                 </li>
-                <li>
-                    <Button 
-                        onClick={() => router.push('/contact')}
-                    >
-                        Contact
-                    </Button>
-                </li>
             </ul>
             <ul className="flex flex-row gap-4">
                 <li>
