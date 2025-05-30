@@ -1,5 +1,6 @@
 "use client";
 
+import { Badge } from "@/atoms/badge";
 import { Button } from "@/atoms/button";
 import { Container, Globe } from "lucide-react";
 import Image from "next/image";
@@ -75,6 +76,13 @@ export default function Projects() {
                     width={400}
                     height={200}
                 />
+                <div className="flex flex-row flex-wrap gap-1">
+                    {project.technologes.map((technology, index) => (
+                        <Badge key={index} className="bg-sky-950">
+                            {technology}
+                        </Badge>
+                    ))}
+                </div>
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
                 <div className="flex flex-row gap-2">
