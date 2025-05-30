@@ -59,13 +59,30 @@ const Medium = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export default function Hero() {
+
+    const downloadResume = async () => {
+        const response = await fetch("https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlAeJp3A0acof4RtzrDZivg1dLkeU02nhawylS");
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'ballo_latest.pdf';
+        link.click();
+    }
+
     return (<section className="flex flex-row w-full">
         <div className="flex flex-col w-2/3 gap-8">
             <h1 className="text-4xl">Jonathan Ballona Sanchez</h1>
             <h3 className="text-lg">AI Engineer from Bay Area, CA</h3>
             <p className="text-xl">Building Fast, Shipping Fast. Cracked engineer who lives to learn.</p>
             <div className="flex flex-row items-center gap-5">
-                <Button variant="outline"><FileDown /> Resume</Button>
+                <Button 
+                    variant="outline"
+                    onClick={downloadResume}
+                >
+                    <FileDown /> Resume
+                </Button>
                 <a href="mailto:jballonasanchez@gmail.com">
                     <Gmail height={28} width={28} />
                 </a>
