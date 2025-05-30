@@ -17,9 +17,9 @@ interface Project {
 const projects: Project[] = [
     {
         title: "VALLM",
-        description: "LLM Evaluation on real web content",
+        description: "LLM Evaluation on real web/scraped content",
         imageUrl: "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlGku9W2Krfb4VW5x78FhpSNPz9asRimtvlD1n",
-        technologes: ["nextjs", "tailwind", "postgresql", "flask"],
+        technologes: ["nextjs", "tailwind", "postgresql", "flask", "firecrawl", "clerk"],
         website: "https://www.vallm.app/",
         source: "https://github.com/jballo/VALLM"
     },
@@ -33,17 +33,17 @@ const projects: Project[] = [
     },
     {
         title: "AI Book Reader",
-        description: "Let AI Book Reader, read for you",
+        description: "Let AI Book Reader, read your books for you",
         imageUrl: "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlGpxZZIKrfb4VW5x78FhpSNPz9asRimtvlD1n",
-        technologes: ["nextjs", "tailwind", "express", "uploadthing"],
+        technologes: ["nextjs", "tailwind", "express", "uploadthing", "playai-tts"],
         website: "https://ai-book-reader-jballos-projects.vercel.app/",
         source: "https://github.com/jballo/AI-Book-Reader"
     },
     {
         title: "Agentic Recruiter",
-        description: "Create sequence of messages for contact",
+        description: "Create outreach message sequences",
         imageUrl: "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlaq3p3dwkeJVTOC9bPX4tFj17cfKqGzS85Hgh",
-        technologes: ["nextjs", "tailwind", "postgresql", "flask"],
+        technologes: ["nextjs", "tailwind", "postgresql", "flask", "clerk"],
         source: "https://github.com/jballo/AgenticRecruiter",
     },
     {
@@ -57,7 +57,7 @@ const projects: Project[] = [
         title: "PantryGrove",
         description: "Manage pantry inventory with ease",
         imageUrl: "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnldI3LLDLxmRPWeyrM9u3jw0TFsbGNUVd6JS4A",
-        technologes: ["nextjs", "material-ui", "firestore"],
+        technologes: ["nextjs", "material-ui", "firestore", "openai"],
         website: "https://pantry-tracker-one-alpha.vercel.app/",
         source: "https://github.com/jballo/Pantry_Tracker"
     },
@@ -76,7 +76,7 @@ export default function Projects() {
                 />
                 <div className="flex flex-row flex-wrap justify-center w-11/12 gap-1">
                     {project.technologes.map((technology, index) => (
-                        <Badge key={index} className="bg-sky-950">
+                        <Badge key={index} className="text-gray-500 bg-slate-200">
                             {technology}
                         </Badge>
                     ))}
@@ -86,10 +86,10 @@ export default function Projects() {
                     <p>{project.description}</p>
                     <div className="flex flex-row w-full gap-2">
                         {project.website && (
-                            <Button><a href={project.website} target="_blank" className="flex flex-row items-center gap-1"><Globe />Website</a></Button>
+                            <Button className="w-14 text-[10px]"><a href={project.website} target="_blank" className="flex flex-row items-center gap-1"><Globe />Site</a></Button>
                         )}
                         {project.source && (
-                            <Button><a href={project.source} target="_blank" className="flex flex-row items-center gap-1"><Container />Source</a></Button>
+                            <Button className="w-16 text-[10px]"><a href={project.source} target="_blank" className="flex flex-row items-center gap-1"><Container />Source</a></Button>
                         )}
                     </div>
                 </div>
