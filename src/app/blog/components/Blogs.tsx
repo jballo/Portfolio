@@ -71,8 +71,8 @@ export default function Blogs() {
             {blogs
                 .filter((blog) => blog.title.toLowerCase().includes(searchText.toLowerCase()))
                 .map((blog, index) => (
-                    <>
-                        <a key={index} href={blog.url} target="_blank">
+                    <div key={index} className="flex flex-col w-full">
+                        <a href={blog.url} target="_blank">
                             <div className="flex flex-col w-full p-8 gap-2">
                                 <h3 className="font-bold">{blog.title}</h3>
                                 <div className="flex flex-row w-full justify-between">
@@ -84,7 +84,7 @@ export default function Blogs() {
                         {index !== blogs.filter((blog) => blog.title.toLowerCase().includes(searchText.toLowerCase())).length && (
                             <Separator />
                         )}
-                    </>
+                    </div>
                 ))
             }
             

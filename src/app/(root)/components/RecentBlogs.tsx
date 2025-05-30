@@ -21,7 +21,7 @@ export default function RecentBlogs() {
                 <div className="flex flex-col w-full p-8 gap-2">
                     <h3 className="font-bold">Evaluating LLM Responses with RAG and DeepEval</h3>
                     <div className="flex flex-row w-full justify-between">
-                        <p>Built a fast, scalable API for image creation in &lt;2 seconds using Modal’s A100 GPUs</p>
+                        <p>Built a scalable API for evaluation 6+ LLM responses based off of scraped content</p>
                         <p>Apr 2025</p>
                     </div>
                 </div>
