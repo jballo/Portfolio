@@ -45,14 +45,12 @@ const projects: Project[] = [
         imageUrl: "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlaq3p3dwkeJVTOC9bPX4tFj17cfKqGzS85Hgh",
         technologes: ["nextjs", "tailwind", "postgresql", "flask"],
         source: "https://github.com/jballo/AgenticRecruiter",
-        website: "https://github.com/jballo/AgenticRecruiter",
     },
     {
         title: "Brain Tumor Classification",
         description: "Classify and analyze brain scans",
         imageUrl: "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlPaRuuOtSDpdueOkK94wAV0TrjEFW8XqhbYtQ",
         technologes: ["python", "streamlit", "tensorflow", "pandas", "opencv"],
-        website: "https://github.com/jballo/BrainTumorClassification.git",
         source: "https://github.com/jballo/BrainTumorClassification.git"
     },
     {
@@ -67,7 +65,7 @@ const projects: Project[] = [
 
 export default function Projects() {
 
-    return (<section className="grid grid-cols-2 gap-4">
+    return (<section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (
             <div key={index} className="flex flex-col items-center w-full p-4 gap-5 border-1 border-gray-300 rounded-lg">
                 <Image
@@ -76,22 +74,24 @@ export default function Projects() {
                     width={400}
                     height={200}
                 />
-                <div className="flex flex-row flex-wrap gap-1">
+                <div className="flex flex-row flex-wrap justify-center w-11/12 gap-1">
                     {project.technologes.map((technology, index) => (
                         <Badge key={index} className="bg-sky-950">
                             {technology}
                         </Badge>
                     ))}
                 </div>
-                <h4>{project.title}</h4>
-                <p>{project.description}</p>
-                <div className="flex flex-row gap-2">
-                    {project.website && (
-                        <Button><a href={project.website} target="_blank" className="flex flex-row"><Globe />Website</a></Button>
-                    )}
-                    {project.source && (
-                        <Button><a href={project.source} target="_blank" className="flex flex-row"><Container />Source</a></Button>
-                    )}
+                <div className="flex flex-col justify-end w-10/12 h-full gap-2">
+                    <h4>{project.title}</h4>
+                    <p>{project.description}</p>
+                    <div className="flex flex-row w-full gap-2">
+                        {project.website && (
+                            <Button><a href={project.website} target="_blank" className="flex flex-row items-center gap-1"><Globe />Website</a></Button>
+                        )}
+                        {project.source && (
+                            <Button><a href={project.source} target="_blank" className="flex flex-row items-center gap-1"><Container />Source</a></Button>
+                        )}
+                    </div>
                 </div>
             </div>
         ))}
