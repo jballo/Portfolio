@@ -4,19 +4,19 @@ import { Separator } from "@/atoms/separator";
 import Image from "next/image";
 
 
-export default function WorkHistory () {
+export default function WorkHistory() {
 
-    return (<div className="flex flex-col p-7 gap-7 rounded-xl border-1 border-gray-300">
+    return (<div className="flex flex-col p-7 gap-7 rounded-xl border-1 border-gray-300 dark:border-neutral-800">
         <div className="flex flex-row gap-8">
             <div className="flex flex-col items-center">
-                <Image 
+                <Image
                     src="https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlht2XTyHsIjKfVXpxP8LyzsCTdl2GgbSYRh9r"
                     alt="Headstarter AI Logo"
                     width={70}
                     height={70}
                     className="rounded-2xl"
                 />
-                <Separator 
+                <Separator
                     orientation="vertical"
                     className="border-[1px]"
                 />
@@ -36,20 +36,20 @@ export default function WorkHistory () {
         </div>
         <div className="flex flex-row gap-8">
             <div className="flex flex-col items-center">
-                <Image 
+                <Image
                     src="https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlzlyDfhMpquRNMztrJOhx8BUkwCIHsV64TZAj"
                     alt="Headstarter AI Logo"
                     width={70}
                     height={70}
                     className="rounded-2xl"
                 />
-                <Separator 
+                <Separator
                     orientation="vertical"
                     className="border-[1px]"
                 />
             </div>
             <div className="flex flex-col gap-1">
-            <p>Jul 2024 - Sep 2024</p>
+                <p>Jul 2024 - Sep 2024</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Pixeland Technologies Inc</h4>
                 <p className="text-sm">
@@ -63,20 +63,20 @@ export default function WorkHistory () {
         </div>
         <div className="flex flex-row gap-8">
             <div className="flex flex-col items-center">
-                <Image 
+                <Image
                     src="https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlw6BXAv0eiHCuZ8gemBEnq61USjYR9DW4lwPh"
                     alt="Headstarter AI Logo"
                     width={70}
                     height={70}
                     className="rounded-2xl"
                 />
-                <Separator 
+                <Separator
                     orientation="vertical"
                     className="border-[1px]"
                 />
             </div>
             <div className="flex flex-col gap-1">
-            <p>Feb 2024 - Apr 2024</p>
+                <p>Feb 2024 - Apr 2024</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Lob</h4>
                 <p className="text-sm">
@@ -90,20 +90,20 @@ export default function WorkHistory () {
         </div>
         <div className="flex flex-row gap-8">
             <div className="flex flex-col items-center">
-                <Image 
+                <Image
                     src="https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlRUxw9BQWU7S1ANbaLGOvYK8t4rxizndTBemP"
                     alt="Headstarter AI Logo"
                     width={70}
                     height={70}
                     className="rounded-2xl"
                 />
-                <Separator 
+                <Separator
                     orientation="vertical"
                     className="border-[1px]"
                 />
             </div>
             <div className="flex flex-col gap-1">
-            <p>Jul 2023 - Dec 2023</p>
+                <p>Jul 2023 - Dec 2023</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Sweep</h4>
                 <p className="text-sm">
@@ -117,7 +117,7 @@ export default function WorkHistory () {
         </div>
         <div className="flex flex-row gap-8">
             <div className="flex flex-col">
-                <Image 
+                <Image
                     src="https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlAre0uMacof4RtzrDZivg1dLkeU02nhawylSE"
                     alt="Headstarter AI Logo"
                     width={70}
@@ -126,7 +126,7 @@ export default function WorkHistory () {
                 />
             </div>
             <div className="flex flex-col gap-1">
-            <p>Jun 2023 - Aug 2023</p>
+                <p>Jun 2023 - Aug 2023</p>
                 <h3 className="font-bold">Software Engineering Intern</h3>
                 <h4>Open Avenues (Remix Labs)</h4>
                 <p className="text-sm">

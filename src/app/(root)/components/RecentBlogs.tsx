@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 
 export default function RecentBlogs() {
     const router = useRouter();
-    
+
     return (<section className="flex flex-col w-full gap-4">
         <div className="flex flex-row justify-between w-full">
             <h2 className="text-3xl">Recent Posts</h2>
@@ -19,7 +19,7 @@ export default function RecentBlogs() {
                 view more <ArrowRight />
             </Button>
         </div>
-        <div className="flex flex-col w-full border-1 rounded-xl">
+        <div className="flex flex-col w-full border-1 rounded-xl dark:border-neutral-800">
             <a href="https://medium.com/@jballo/evaluating-llm-responses-with-rag-and-deepeval-1e3e8889c177" target="_blank">
                 <div className="flex flex-col w-full p-8 gap-2">
                     <h3 className="font-bold">Evaluating LLM Responses with RAG and DeepEval</h3>
