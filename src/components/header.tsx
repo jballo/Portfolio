@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/atoms/button";
-import { Bot, Sun } from "lucide-react";
+import { Sun } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 
