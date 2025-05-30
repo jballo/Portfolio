@@ -40,14 +40,14 @@ export default function Header() {
                 </li>
             </ul>
             <ul className="flex flex-row gap-4">
-                <li>
+                {/* <li>
                     <Button
                         variant="ghost"
                         className="p-0 text-md"
                     >
                         <Sun />
                     </Button>
-                </li>
+                </li> */}
             </ul>
         </nav>
     </header>)
