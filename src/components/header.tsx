@@ -2,23 +2,42 @@
 
 import { Button } from "@/atoms/button";
 import { Sun } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 
 export default function Header() {
+    const router = useRouter();
+
     return (<header className="w-full max-w-3xl mx-auto sm:px-6 py-6 lg:px-8">
         <nav className="flex flex-row justify-between w-full">
             <ul className="flex flex-row gap-6">
                 <li>
-                    <Button>Home</Button>
+                    <Button 
+                        onClick={() => router.push('/')}
+                    >
+                        Home
+                    </Button>
                 </li>
                 <li>
-                    <Button>Projects</Button>
+                    <Button 
+                        onClick={() => router.push('/projects')}
+                    >
+                        Projects
+                    </Button>
                 </li>
                 <li>
-                    <Button>Blog</Button>
+                    <Button 
+                        onClick={() => router.push('/blog')}
+                    >
+                        Blog
+                    </Button>
                 </li>
                 <li>
-                    <Button>Contact</Button>
+                    <Button 
+                        onClick={() => router.push('/contact')}
+                    >
+                        Contact
+                    </Button>
                 </li>
             </ul>
             <ul className="flex flex-row gap-4">

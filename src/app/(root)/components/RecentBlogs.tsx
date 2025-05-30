@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 
 export default function RecentBlogs() {
+    
     return (<section className="flex flex-col w-full gap-4">
         <div className="flex flex-row justify-between w-full">
             <h2 className="text-3xl">Recent Posts</h2>
