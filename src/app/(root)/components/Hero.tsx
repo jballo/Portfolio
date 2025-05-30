@@ -64,19 +64,19 @@ export default function Hero() {
             <h1 className="text-4xl">Jonathan Ballona Sanchez</h1>
             <h3 className="text-lg">AI Engineer from Bay Area, CA</h3>
             <p className="text-xl">Building Fast, Shipping Fast. Cracked engineer who lives to learn.</p>
-            <div className="flex flex-row gap-7">
+            <div className="flex flex-row items-center gap-5">
                 <Button variant="outline"><FileDown /> Resume</Button>
+                <a href="mailto:jballonasanchez@gmail.com">
+                    <Gmail height={28} width={28} />
+                </a>
                 <a href="https://www.linkedin.com/in/jballo/" target="_blank">
-                    <LinkedIn height={30} width={30} />
+                    <LinkedIn height={25} width={25} />
                 </a>
                 <a href="https://github.com/jballo" target="_blank">
-                    <GitHub height={35} width={35} />
+                    <GitHub height={25} width={25} />
                 </a>
                 <a href="https://medium.com/@jballo" target="_blank">
-                    <Medium height={35} width={35} />
-                </a>
-                <a>
-                    <Gmail height={35} width={35} />
+                    <Medium height={33} width={33} />
                 </a>
             </div>
         </div>

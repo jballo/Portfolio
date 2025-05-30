@@ -3,15 +3,18 @@
 import { Button } from "@/atoms/button";
 import { Separator } from "@/atoms/separator";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 
 export default function RecentBlogs() {
+    const router = useRouter();
     
     return (<section className="flex flex-col w-full gap-4">
         <div className="flex flex-row justify-between w-full">
             <h2 className="text-3xl">Recent Posts</h2>
             <Button
-                variant="ghost"
+                variant="link"
+                onClick={() => router.push('/blog')}
             >
                 view more <ArrowRight />
             </Button>

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/atoms/button";
-import { Sun } from "lucide-react";
+import { Bot, Sun } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 
@@ -12,22 +12,28 @@ export default function Header() {
         <nav className="flex flex-row justify-between w-full">
             <ul className="flex flex-row gap-6">
                 <li>
-                    <Button 
+                    <Button
+                        variant="link" 
                         onClick={() => router.push('/')}
+                        className="p-0 text-md"
                     >
                         Home
                     </Button>
                 </li>
                 <li>
                     <Button 
+                        variant="link"
                         onClick={() => router.push('/projects')}
+                        className="p-0 text-md"
                     >
                         Projects
                     </Button>
                 </li>
                 <li>
                     <Button 
+                        variant="link"
                         onClick={() => router.push('/blog')}
+                        className="p-0 text-md"
                     >
                         Blog
                     </Button>
@@ -35,10 +41,12 @@ export default function Header() {
             </ul>
             <ul className="flex flex-row gap-4">
                 <li>
-                    <Button>Bot</Button>
-                </li>
-                <li>
-                    <Button><Sun /></Button>
+                    <Button
+                        variant="ghost"
+                        className="p-0 text-md"
+                    >
+                        <Sun />
+                    </Button>
                 </li>
             </ul>
         </nav>
