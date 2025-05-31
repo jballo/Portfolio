@@ -21,8 +21,8 @@ export default function EducationHistory() {
                 />
             </div>
             <div className="flex flex-col gap-1">
-                <h3 className="font-bold">University of California, Merced</h3>
-                <h4>Bachelors of Science in Computer Science</h4>
+                <h3 className="font-bold">Bachelors of Science in Computer Science</h3>
+                <h4 className="dark:text-gray-400">University of California, Merced</h4>
             </div>
         </div>
         <div className="flex flex-row gap-8">
@@ -41,7 +41,7 @@ export default function EducationHistory() {
             </div>
             <div className="flex flex-col gap-1">
                 <h3 className="font-bold">iOS Development Certificate</h3>
-                <h4>CodePath</h4>
+                <h4 className="dark:text-gray-400">CodePath</h4>
             </div>
         </div>
         <div className="flex flex-row gap-8">
@@ -56,7 +56,7 @@ export default function EducationHistory() {
             </div>
             <div className="flex flex-col gap-1">
                 <h3 className="font-bold">Software Engineering Certificate</h3>
-                <h4>CodePath</h4>
+                <h4 className="dark:text-gray-400">CodePath</h4>
             </div>
         </div>
     </div>);

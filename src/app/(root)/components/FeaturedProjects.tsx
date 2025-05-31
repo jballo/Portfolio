@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
                     height={200}
                 />
                 <h4>VALLM</h4>
-                <p>LLM Evaluation on real web content</p>
+                <p className="dark:text-gray-400">LLM Evaluation on real web content</p>
                 <div className="flex flex-row gap-2">
                     <Button><a href="https://www.vallm.app/" target="_blank" className="flex flex-row"><Globe />Website</a></Button>
                     <Button><a href="https://github.com/jballo/VALLM" target="_blank" className="flex flex-row"><Container />Source</a></Button>
@@ -30,7 +30,7 @@ export default function FeaturedProjects() {
                     height={200}
                 />
                 <h4>Pentagram</h4>
-                <p>AI Image Generating Social Media Platform</p>
+                <p className="dark:text-gray-400">AI Image Generating Social Media Platform</p>
                 <div className="flex flex-row gap-2">
                     <Button><a href="https://github.com/jballo/pentagram" target="_blank" className="flex flex-row"><Globe />Website</a></Button>
                     <Button><a href="https://github.com/jballo/pentagram" target="_blank" className="flex flex-row"><Container />Source</a></Button>

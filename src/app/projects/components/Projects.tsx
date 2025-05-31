@@ -83,7 +83,7 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-col justify-end w-10/12 h-full gap-2">
                     <h4>{project.title}</h4>
-                    <p>{project.description}</p>
+                    <p className="dark:text-gray-400">{project.description}</p>
                     <div className="flex flex-row w-full gap-2">
                         {project.website && (
                             <Button className="w-14 text-[10px]"><a href={project.website} target="_blank" className="flex flex-row items-center gap-1"><Globe />Site</a></Button>
