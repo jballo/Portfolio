@@ -5,7 +5,7 @@ import { Container, Globe } from "lucide-react";
 import Image from "next/image";
 
 export default function FeaturedProjects() {
-    return (<section className="flex flex-col w-full">
+    return (<section className="flex flex-col w-full gap-4">
         <h2 className="text-3xl">Featured Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4">
             <div className="flex flex-col items-center w-full p-4 gap-5 border-1 dark:border-neutral-800 rounded-lg">
