@@ -6,7 +6,7 @@ import RecentBlogs from "./components/RecentBlogs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full max-w-3xl mx-auto py-6 sm:px-6 lg:px-8 gap-12">
+    <div className="flex flex-col w-full max-w-3xl mx-auto py-6 px-4 sm:px-6 lg:px-8 gap-12">
       {/* Hero Section */}
       <Hero />
       {/* Work + Education Section */}
