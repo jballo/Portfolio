@@ -15,12 +15,12 @@ export default function Header() {
         setTheme(newTheme);
     }
 
-    return (<header className="w-full max-w-3xl mx-auto sm:px-6 py-6 lg:px-8">
+    return (<header className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 lg:px-8">
         <nav className="flex flex-row justify-between w-full">
             <ul className="flex flex-row gap-6">
                 <li>
                     <Button
-                        variant="link" 
+                        variant="link"
                         onClick={() => router.push('/')}
                         className="p-0 text-md"
                     >
@@ -28,7 +28,7 @@ export default function Header() {
                     </Button>
                 </li>
                 <li>
-                    <Button 
+                    <Button
                         variant="link"
                         onClick={() => router.push('/projects')}
                         className="p-0 text-md"
@@ -37,7 +37,7 @@ export default function Header() {
                     </Button>
                 </li>
                 <li>
-                    <Button 
+                    <Button
                         variant="link"
                         onClick={() => router.push('/blog')}
                         className="p-0 text-md"
@@ -46,16 +46,16 @@ export default function Header() {
                     </Button>
                 </li>
             </ul>
-            <ul className="flex flex-row gap-4">
+            <ul className="flex flex-row justify-center items-center gap-4">
                 <li>
                     <Button
                         variant="ghost"
-                        className="p-0 text-md"
+                        className="p-0 text-md w-6 h-6 flex"
                         onClick={toggleTheme}
                     >
                         {theme === 'dark' ? (
                             <Sun />
-                        ): (
+                        ) : (
                             <Moon />
                         )}
                     </Button>
