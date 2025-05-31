@@ -93,7 +93,7 @@ export default function Hero() {
 
     return (<section className="flex flex-row w-full">
         <div className="flex flex-col w-2/3 gap-8">
-            <h1 className="text-4xl">Jonathan Ballona Sanchez</h1>
+            <h1 className="text-4xl font-serif">Jonathan Ballona Sanchez</h1>
             <h3 className="text-lg">AI Engineer from Bay Area, CA</h3>
             <p className="text-xl">Building Fast, Shipping Fast. Cracked engineer who lives to learn.</p>
             <div className="flex flex-row items-center gap-5">

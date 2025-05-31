@@ -67,7 +67,7 @@ export default function Projects() {
 
     return (<section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (
-            <div key={index} className="flex flex-col items-center w-full p-4 gap-5 border-1 border-gray-300 rounded-lg">
+            <div key={index} className="flex flex-col items-center w-full p-4 gap-5 border-1 border-gray-300 dark:border-neutral-700 rounded-lg">
                 <Image
                     src={project.imageUrl}
                     alt={project.title}
@@ -76,20 +76,20 @@ export default function Projects() {
                 />
                 <div className="flex flex-row flex-wrap justify-center w-11/12 gap-1">
                     {project.technologes.map((technology, index) => (
-                        <Badge key={index} className="text-gray-500 bg-slate-200">
+                        <Badge key={index} className="text-gray-500 bg-slate-200 dark:text-gray-300 dark:bg-slate-800">
                             {technology}
                         </Badge>
                     ))}
                 </div>
                 <div className="flex flex-col justify-end w-10/12 h-full gap-2">
                     <h4>{project.title}</h4>
-                    <p>{project.description}</p>
+                    <p className="dark:text-gray-400">{project.description}</p>
                     <div className="flex flex-row w-full gap-2">
-                        {project.website && (
-                            <Button className="w-14 text-[10px]"><a href={project.website} target="_blank" className="flex flex-row items-center gap-1"><Globe />Site</a></Button>
-                        )}
                         {project.source && (
-                            <Button className="w-16 text-[10px]"><a href={project.source} target="_blank" className="flex flex-row items-center gap-1"><Container />Source</a></Button>
+                            <Button className="w-16 h-8 text-[10px]"><a href={project.source} target="_blank" className="flex flex-row items-center gap-1"><Container />Source</a></Button>
+                        )}
+                        {project.website && (
+                            <Button className="w-14 h-8 text-[10px]"><a href={project.website} target="_blank" className="flex flex-row items-center gap-1"><Globe />Site</a></Button>
                         )}
                     </div>
                 </div>
