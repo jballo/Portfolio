@@ -15,8 +15,8 @@ export default function Header() {
         setTheme(newTheme);
     }
 
-    return (<header className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 lg:px-8">
-        <nav className="flex flex-row justify-between w-full">
+    return (<header className="sticky top-0 w-full max-w-3xl mx-auto sm:px-6 px-4 mt-3 lg:px-8">
+        <nav className="flex flex-row justify-between items-center w-full h-17 rounded-b-lg px-2 backdrop-blur-3xl">
             <ul className="flex flex-row gap-6">
                 <li>
                     <Button
