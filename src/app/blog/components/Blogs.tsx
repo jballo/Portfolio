@@ -54,10 +54,10 @@ export default function Blogs() {
 
     return (<section className="flex flex-col w-full gap-4">
         <div className="flex flex-row justify-between w-full gap-2">
-            <Input 
-                type="text" 
-                placeholder="Search for blog..." 
-                value={searchText} 
+            <Input
+                type="text"
+                placeholder="Search for blog..."
+                value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
             />
             <Button
@@ -75,8 +75,8 @@ export default function Blogs() {
                         <a href={blog.url} target="_blank">
                             <div className="flex flex-col w-full p-8 gap-2">
                                 <h3 className="font-bold">{blog.title}</h3>
-                                <div className="flex flex-row w-full justify-between">
-                                    <p>{blog.content}</p>
+                                <div className="flex flex-row w-full justify-between gap-4">
+                                    <p className="dark:text-gray-400">{blog.content}</p>
                                     <p>{blog.date}</p>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ export default function Blogs() {
                     </div>
                 ))
             }
-            
+
         </div>
     </section>);
 }
