@@ -68,21 +68,21 @@ export default function Skills() {
             </Tooltip>
             <Tooltip>
                 <TooltipTrigger>
-                    <Stripe width={35} height={35} />
+                    <HuggingFace width={35} height={35} />
                 </TooltipTrigger>
-                <TooltipContent>Stripe</TooltipContent>
+                <TooltipContent>Huggingface</TooltipContent>
             </Tooltip>
             <Tooltip>
                 <TooltipTrigger>
-                    <Langchain width={35} height={35} />
+                    <Langchain width={35} height={35} fill="#204544" />
                 </TooltipTrigger>
                 <TooltipContent>Langchain</TooltipContent>
             </Tooltip>
             <Tooltip>
                 <TooltipTrigger>
-                    <HuggingFace width={35} height={35} />
+                    <Stripe width={35} height={35} />
                 </TooltipTrigger>
-                <TooltipContent>Huggingface</TooltipContent>
+                <TooltipContent>Stripe</TooltipContent>
             </Tooltip>
         </div>
     </section>)
