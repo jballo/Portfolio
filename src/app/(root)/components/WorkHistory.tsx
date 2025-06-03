@@ -55,18 +55,18 @@ export default function WorkHistory() {
         {experiences.map((experience, index) => (
             <div key={index} className="flex flex-row gap-8">
                 <div className="flex flex-col items-center gap-2">
-                    <Image
-                        src={experience.imageUrl}
-                        alt={`${experience.company} Logo`}
-                        width={70}
-                        height={70}
-                        className="rounded-2xl"
-                    />
-                    {index !== experiences.length - 1 && (
-                        <Separator
-                            orientation="vertical"
-                            className="border-[1px]"
+                    <div className="w-11 h-11 sm:w-[50px] sm:h-[50px] relative flex-shrink-0">
+                        <Image
+                            src={experience.imageUrl}
+                            alt={`${experience.company} Logo`}
+                            fill
+                            sizes="(max-width: 640px) 44px, 50px"
+                            className="rounded-2xl object-cover"
+                            priority={index === 0}
                         />
+                    </div>
+                    {index !== experiences.length - 1 && (
+                        <Separator orientation="vertical" className="border-[1px]" />
                     )}
                 </div>
                 <div className="flex flex-col gap-1">
