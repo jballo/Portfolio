@@ -101,10 +101,11 @@ export default function Hero() {
     }
 
     return (<section className="flex flex-col-reverse w-full gap-4 sm:flex-row sm:gap-2">
-        <div className="flex flex-col sm:w-2/3 gap-8">
-            <h1 className="text-4xl font-serif">Jonathan Ballona Sanchez</h1>
-            <h3 className="text-lg">AI Engineer from Bay Area, CA</h3>
-            <p className="text-xl">Building Fast, Shipping Fast. Cracked engineer who lives to learn.</p>
+        <div className="flex flex-col sm:w-2/3 gap-3 sm:gap-8">
+            <h1 className="text-2xl xs:text-4xl font-serif">Jonathan Ballona Sanchez</h1>
+            <h3 className="text-base xs:text-lg">AI Engineer from Bay Area, CA</h3>
+            <p className="text-lg xs:text-xl">Building Fast, Shipping Fast. Cracked engineer who lives to learn.</p>
+
             {/* Hero Buttons */}
             <div className="flex flex-row items-center gap-5">
                 <Button
