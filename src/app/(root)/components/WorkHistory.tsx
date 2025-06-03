@@ -70,10 +70,10 @@ export default function WorkHistory() {
                     )}
                 </div>
                 <div className="flex flex-col gap-1">
-                    <p>{experience.time}</p>
-                    <h3 className="font-bold">{experience.title}</h3>
-                    <h4>{experience.company}</h4>
-                    <div className="text-[13px] dark:text-gray-400">
+                    <p className="text-sm sm:text-md">{experience.time}</p>
+                    <h3 className="font-bold text-sm sm:text-lg">{experience.title}</h3>
+                    <h4 className="text-sm sm:text-md">{experience.company}</h4>
+                    <div className="text-[12px] sm:text-[13px] dark:text-gray-400">
                         {experience.description.map((bullet, index) => (
                             <p key={index}>
                                 {bullet}
