@@ -54,7 +54,7 @@ export default function WorkHistory() {
     return (<div className="flex flex-col p-7 gap-7 rounded-xl border-1 border-gray-300 dark:border-neutral-800">
         {experiences.map((experience, index) => (
             <div key={index} className="flex flex-row gap-8">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-1 sm:gap-2">
                     <div className="w-11 h-11 sm:w-[50px] sm:h-[50px] relative flex-shrink-0">
                         <Image
                             src={experience.imageUrl}
