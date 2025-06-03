@@ -54,7 +54,7 @@ export default function WorkHistory() {
     return (<div className="flex flex-col p-7 gap-7 rounded-xl border-1 border-gray-300 dark:border-neutral-800">
         {experiences.map((experience, index) => (
             <div key={index} className="flex flex-row gap-8">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-1 sm:gap-2">
                     <div className="w-11 h-11 sm:w-[50px] sm:h-[50px] relative flex-shrink-0">
                         <Image
                             src={experience.imageUrl}
@@ -70,10 +70,10 @@ export default function WorkHistory() {
                     )}
                 </div>
                 <div className="flex flex-col gap-1">
-                    <p>{experience.time}</p>
-                    <h3 className="font-bold">{experience.title}</h3>
-                    <h4>{experience.company}</h4>
-                    <div className="text-[13px] dark:text-gray-400">
+                    <p className="text-sm sm:text-md">{experience.time}</p>
+                    <h3 className="font-bold text-sm sm:text-lg">{experience.title}</h3>
+                    <h4 className="text-sm sm:text-md">{experience.company}</h4>
+                    <div className="text-[12px] sm:text-[13px] dark:text-gray-400">
                         {experience.description.map((bullet, index) => (
                             <p key={index}>
                                 {bullet}
