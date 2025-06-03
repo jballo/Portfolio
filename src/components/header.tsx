@@ -54,9 +54,9 @@ export default function Header() {
                         onClick={toggleTheme}
                     >
                         {theme === 'dark' ? (
-                            <Sun />
+                            <Sun className="text-yellow-200" />
                         ) : (
-                            <Moon />
+                            <Moon className="text-violet-600" />
                         )}
                     </Button>
                 </li>
