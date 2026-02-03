@@ -96,7 +96,7 @@ export default function Hero() {
 
   const downloadResume = async () => {
     const response = await fetch(
-      "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlRK3rrFqQWU7S1ANbaLGOvYK8t4rxizndTBem"
+      "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlRgfGRhQWU7S1ANbaLGOvYK8t4rxizndTBemP"
     );
 
     const blob = await response.blob();

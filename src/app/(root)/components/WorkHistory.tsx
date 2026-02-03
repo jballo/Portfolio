@@ -43,7 +43,7 @@ const experiences: Experience[] = [
       "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlw6BXAv0eiHCuZ8gemBEnq61USjYR9DW4lwPh",
     title: "Software Engineering Intern",
     description: [
-      "• Implemented authentication system with React and Auth0, reducing unauthorized access by 20% for 10,000+ users",
+      "• Implemented authentication system with React and Auth0, reducing unauthorized access by 3% for 10,000+ users",
       " • Optimized PostgreSQL and ExpressJS queries, reducing response time by 50% for 5,000+ active users",
       "• Enhanced React components and ExpressJS code, improving page load times by 15% for 7,500+ users",
     ],
