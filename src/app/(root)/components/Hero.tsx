@@ -113,9 +113,12 @@ export default function Hero() {
         <h1 className="text-2xl xs:text-4xl font-serif">
           Jonathan Ballona Sanchez
         </h1>
-        <h3 className="text-base xs:text-lg">AI Engineer from Bay Area, CA</h3>
+        <h3 className="text-base xs:text-lg">
+          Software Engineer from Bay Area, CA
+        </h3>
         <p className="text-lg xs:text-xl">
-          Building Fast, Shipping Fast. Cracked engineer who lives to learn.
+          I build fast, break fast, fix fast, ship fast. Cracked engineer who
+          lives to learn.
         </p>
 
         {/* Hero Buttons */}

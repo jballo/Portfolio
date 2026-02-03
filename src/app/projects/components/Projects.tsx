@@ -52,7 +52,6 @@ const projects: Project[] = [
     imageUrl:
       "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlQAerjvpGmT9kofx7raLwEetAbNMGshI4KFDC",
     technologes: ["nextjs", "tailwind", "postgresql", "modal", "fastapi"],
-    website: "https://github.com/jballo/pentagram",
     source: "https://github.com/jballo/pentagram",
   },
   {
