@@ -13,7 +13,7 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    time: "Jul 2024- Nov 2025",
+    time: "Jul 2024 - Feb 2025",
     company: "Headstarter AI",
     imageUrl:
       "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlht2XTyHsIjKfVXpxP8LyzsCTdl2GgbSYRh9r",
