@@ -29,7 +29,7 @@ const experiences: Experience[] = [
     company: "Pixeland Technologies Inc",
     imageUrl:
       "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlzlyDfhMpquRNMztrJOhx8BUkwCIHsV64TZAj",
-    title: "Software Engineering Intern",
+    title: "Software Engineering Fellow",
     description: [
       "• Created a scalable virtual oﬃce platform with React, Redux, and Firebase, boosting engagement by 30% across 10 teams",
       "• Engineered real-time sync with Firebase, improving interactions for 2,000+ users with 20% reduced latency",
@@ -41,7 +41,7 @@ const experiences: Experience[] = [
     company: "Lob",
     imageUrl:
       "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnlw6BXAv0eiHCuZ8gemBEnq61USjYR9DW4lwPh",
-    title: "Software Engineering Intern",
+    title: "Software Engineering Fellow",
     description: [
       "• Implemented authentication system with React and Auth0, reducing unauthorized access by 3% for 10,000+ users",
       " • Optimized PostgreSQL and ExpressJS queries, reducing response time by 50% for 5,000+ active users",
