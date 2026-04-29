@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ThemesProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Jonathan Ballona's Portfolio",
-  description: "Explore the projects, skills, and experience of Jonathan Ballona Sanchez, a cracked engineer.",
-  icons: "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnld6MB7bxmRPWeyrM9u3jw0TFsbGNUVd6JS4Al"
+  description:
+    "Explore the projects, skills, and experience of Jonathan Ballona Sanchez, a cracked engineer.",
+  icons:
+    "https://xrqb2mg56u.ufs.sh/f/DbWOBxCL0tnld6MB7bxmRPWeyrM9u3jw0TFsbGNUVd6JS4Al",
 };
 
 export default function RootLayout({
@@ -40,6 +43,7 @@ export default function RootLayout({
           <Header />
           <main className="w-full h-full">{children}</main>
         </ThemesProvider>
+        <Analytics />
       </body>
     </html>
   );
