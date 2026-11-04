@@ -16,6 +16,23 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Camino",
+    description: "Turn GitHub issues into grounded implementation briefs",
+    imageUrl: "https://img.youtube.com/vi/lJYV6SQDckY/maxresdefault.jpg",
+    technologes: [
+      "nextjs",
+      "tailwind",
+      "fastapi",
+      "langgraph",
+      "postgresql",
+      "pgvector",
+      "docker",
+      "clerk",
+    ],
+    website: "https://www.camino.zone/",
+    source: "https://github.com/jballo/camino",
+  },
+  {
     title: "Vallm.chat",
     description: "Powerful multi-model chat and conversation branching",
     imageUrl:
